@@ -1,0 +1,106 @@
+body{
+}
+
+header{
+    display: block;
+    height: 100%;
+    border-top: 3px black solid;
+}
+
+
+
+
+.paginadois{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+}
+
+.paginadois:hover{
+    color:rgb(187, 164, 32);
+}
+
+.banner{
+    width: 100%;
+}
+
+.titulo-principal{
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.principal{
+    background: #cccccc;
+    padding: 35px;
+    margin-top: 0px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 20px;
+    text-align: center;  
+}
+
+p strong{
+    font-weight: bold;
+}
+
+.destaque{
+    color: red;
+}
+ 
+ul{
+    display: inline-block; 
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+    border: 3px black solid;
+    border-radius: 10px;
+}
+
+.itens{
+    font-style: italic;
+    font-size: large;
+    padding-left: 40px;
+    margin: 20px 0;
+    list-style-type: none;
+}
+
+.itens:hover{
+    color: rgb(187, 164, 32);
+    font-size: 20px;
+}
+
+.beneficios h3{
+    padding: 20px;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+
+.imagembeneficios{
+    width: 60%;
+
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+    background: url(imagens\ produtos/bg.jpg);
+}
+
+.copyright{
+    font-size: 16px;
+    color: white;
+}
+

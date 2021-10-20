@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="imagens produtos/logo.png" alt="logo alura"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="produtos.html" target="_blank">Produtos</a></li>
+                    <li><a href="contato.html" target="_self">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <!-- A tag label está sempre associada ao input, serve como uma etiqueta, e ambas precisam ser ligadas por um id.
+            Label e input possuem por padrão um display block, ou seja, ocupam todo o espaço da linha na página. -->
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="70" rows="10" class="input-padrao"></textarea>
+            <!-- textarea serve para criar um campo de texto livre -->
+            <!-- Um input do type radio serve para criar bolinhas clicaveis para selecionar uma opção. -->
+
+            <!-- Site mobile.input ajuda a entender a acessibilidade do cógido de formulários para dispositivos móveis, alterando o type do input -->
+
+            <!-- Propriedade required para tornar um campo de preenchimento obrigatório, e propriedade placeholder para anexar um texto de exemplo em um campo de preenchimento -->
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                
+            </fieldset>
+
+            <!-- Optar pelo uso da tag fieldset para formulários, campos de preenchimentos e dados de cartão e endereço, isso torna o html mais semântico. Também não se usa a tag <p> para adicionar um título mas a tag <legend> -->
+
+            <fieldset>
+                <legend>Qual o melhor horário para ser contactado?</legend>
+                <select  class="select">
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+                </select>
+            </fieldset>
+                 <label><input type="checkbox" class="checkbox" checked>Você gostaria de receber nossas novidades por email?</input></label>
+                 <!-- Propriedade checked usada para deixar uma opção já assinalada de antemão para o usuário. -->
+
+                 <!-- Para tornar o código mais curto e mais rápido, é possível tambem adicionar um input dentro da label, evitando assim que seja preciso adicionar um identificador para eles. -->
+
+            <!-- Para criar a opção de apenas uma escolha, adicionar propriedade name a todos com o mesmo valor -->
+
+            <input type="submit" value="Enviar Formulário" class="submit">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>09:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>09:00 - 17:00</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Fechado</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>09:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>08:00 - 19:00</td>
+                </tr>
+                <tr>
+                    <td colspan="6">:)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Para criar uma tabela, é preciso a tag <table>, em seguida a tag <thead> para criar um cabeçalho, e dentro dela a tag <tr> que é a tag de criação de uma linha, e o conteúdo através da tag <th>, por ser um conteúdo de cabeçalho.
+            Para criar o restante do corpo, se usa o mesmo raciocínio, cria-se a tag <tbody>, seguida pela <tr> e então a tag <td> que é a tag de conteúdo em geral. -->
+    </main>
+    <footer>
+        <img src="imagens produtos/logo-branco.png" alt="">
+        <p class="copyright">&copy;  Copyright Barbearia Alura - 2019</p>
+    </footer>
+</body>
+</html>
